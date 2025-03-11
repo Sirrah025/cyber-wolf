@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const pageTitle = "About Me";
 
 const skills = ["HTML", "CSS", "JavaScript", "Astro"];
@@ -12,28 +14,28 @@ const days_worked = 1;
     <head>
         <title>{pageTitle}</title>
     </head>
-    <body>
+    <body class="bg-amber-100">
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
 
-        <h1>{pageTitle}</h1>
-        <h2> and this little website</h2>
+        <h1 class="mx-auto flex items-center">{pageTitle}</h1>
+        <h2 class="items-center"> and this little website</h2>
 
-        <p>My Skills are:</p>
-        <ul>
+        <p class="items-center">My Skills are:</p>
+        <ul class="items-center">
             {skills.map((skill) => <li>{skill}</li>)}
         </ul>
 
-        <p>This was made using Astro</p>
+        <p class="items-center">This was made using Astro</p>
 
-        <p>This page will update with more information</p>
+        <p class="items-center">This page will update with more information</p>
 
-        {coding && <p>Coding in progress using Astro!</p>}
+        {coding && <p class="items-center">Coding in progress using Astro!</p>}
 
-        {finished && <p>Like Schrodinger's cat, I am finished with this website</p>}
+        {finished && <p class="items-center">Like Schrodinger's cat, I am finished with this website</p>}
 
-        <p>Worked a total of {days_worked} days on this website</p>
-        {days_worked % 7 === 0 ? <p>A full week of work!</p> : <p>Not yet a week's worth of work done.</p>}
+        <p class="items-center">Worked a total of {days_worked} days on this website</p>
+        {days_worked % 7 === 0 ? <p class="items-center">A full week of work!</p> : <p class="items-center">Not yet a week's worth of work done.</p>}
     </body>
 </html>
