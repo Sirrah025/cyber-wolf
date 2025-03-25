@@ -1,6 +1,6 @@
 html {
     background: rgb(55,3,3);
-    background: linear-gradient(350deg, rgba(55,3,3,1) 0%, rgba(156,19,19,1) 35%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(350deg, #FF3533 0%, #ff0000 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
