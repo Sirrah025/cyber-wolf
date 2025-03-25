@@ -1,0 +1,11 @@
+---
+const platform = "twitch.tv";
+const username = "sirrah025";
+import Social from './Social.astro';
+---
+
+
+<footer >
+    <Social platform="bluesky" link="bsky.app/profile/sirrah025.bsky.social" username="sirrah025" />
+    <p>Check out my twitch streams on <a href={`https://www.${platform}/${username}`}>{platform}</a>!</p>
+</footer>
